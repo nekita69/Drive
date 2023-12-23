@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrfmiddlewaretoken" content="{{ csrfmiddlewaretoken }}">
+    <meta name="token" content="{{ token }}">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'driveapp/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu_logo">ADM MyDrive</div>
+                <div class="menu_chapter">
+                    <div class="chapter_item" onclick="adm_get_acc_menu(this)"><p>Пользователи</p></div>
+                    <div class="chapter_item" onclick="adm_get_trnsp_menu(this)"><p>Транспорт</p></div>
+                    <div class="chapter_item" onclick="adm_get_rent_menu(this)"><p>Аренда</p></div>
+                </div>
+                <div class="menu_acc" onclick="adm_acc_info()">
+                    <div id="username" class="menu_acc_name"><p>User</p></div>
+                    <div id="balance" class="menu_acc_blns"><p>0 руб</p></div>
+                </div>
+            </div>
+        </div>
+   </header>
+    <main>
+        <div class="my_modal my_modal_unactive"></div>
+        <div class="special_btn"></div>
+        <div class="special_btn1" onclick="SignOut_func()">Выйти</div>
+        <div class="sub_menu my_flex">
+            <div class="sub_menu_for_chapter">
+                <div class="sub_menu_for_chapter_item" onclick="adm_get_users_accs()">Пользователи</div>
+                <div class="sub_menu_for_chapter_item" onclick="adm_add_user_acc()">Добавить</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main_block">
+
+
+              
+
+            </div>
+        </div>
+    </main>
+    <footer class="my_margin">
+        <div class="container my_flex">
+            <div><h3>MyDrive</h3></div>
+        </div>
+    </footer>
+    <script src="{% static 'driveapp/js/adm_scrps.js' %}"></script>
+</body>
+</html>

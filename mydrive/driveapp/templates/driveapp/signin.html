@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrfmiddlewaretoken" content="{{csrfmiddlewaretoken}}">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="{% static 'driveapp/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu_logo">MyDrive</div> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container my_margin my_flex my_height">
+            
+            <form class="my_form my_margin" method="POST" action="index">
+                {% csrf_token %}
+                <div class="my_f_item my_margin">{{ exception }}</div>
+                <div class="my_f_item my_margin">{{ response }}</div>
+                <div class="my_f_item my_margin"><h2>Авторизация</h2></div>
+                <div class="my_f_item my_margin"><input type="text" name="username" placeholder="Имя пользователя"></div>
+                <div class="my_f_item my_margin">
+                    <div class="my_f_item_pass">
+                        <input type="password" name="password" placeholder="Пароль"><input class="check_spec_pass" type="checkbox" name="checkbox_for_pass" onclick="checkPass1(this)">
+                    </div>
+                </div>
+                <div class="my_f_item my_margin my_display_none"></div>
+                <div class="my_f_item my_margin"><input class="my_button" type="submit" value="Войти"></div>
+                <div class="my_f_item"><div class="btn_for_act_start" onclick="singUp_open_form()">Зарегистрироваться</div></div>
+            </form>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="container my_flex">
+            <div><h3>MyDrive</h3></div>
+        </div>
+    </footer>
+    <script src="{% static 'driveapp/js/scripts.js' %}"></script>
+</body>
+</html>

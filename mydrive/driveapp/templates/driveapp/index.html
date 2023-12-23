@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrfmiddlewaretoken" content="{{csrfmiddlewaretoken}}">
+    <meta name="token" content="{{token}}">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'driveapp/css/style.css' %}">
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu_logo">MyDrive</div>
+                <div class="menu_chapter">
+                    <div class="chapter_item" onclick="get_acc_menu(this)"><p>Аккаунт</p></div>
+                    <div class="chapter_item" onclick="get_trnsp_menu(this)"><p>Транспорт</p></div>
+                    <div class="chapter_item" onclick="get_rent_menu(this)"><p>Аренда</p></div>
+                </div>
+                <div class="menu_acc">
+                    <div id="username" class="menu_acc_name"><p>User</p></div>
+                    <div id="balance" class="menu_acc_blns"><p>0 руб</p></div>
+                </div>
+            </div>
+        </div>
+   </header>
+    <main>
+
+        <div class="my_modal my_modal_unactive">
+            
+        </div>
+
+        <div class="special_btn"></div>
+        <div class="special_btn1" onclick="SignOut_func()">Выйти</div>
+        <div class="sub_menu my_flex">
+            <div class="sub_menu_for_chapter">
+                <div class="sub_menu_for_chapter_item" onclick="acc_info()">Информация</div>
+                <div class="sub_menu_for_chapter_item" onclick="acc_change()">Изменение</div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="main_block">
+
+                
+            </div>
+                
+
+        </div>
+    </main>
+    <footer class="my_margin">
+        <div class="container my_flex">
+            <div><h3>MyDrive</h3></div>
+        </div>
+    </footer>
+    <script src="{% static 'driveapp/js/scripts.js' %}"></script>
+</body>
+</html>

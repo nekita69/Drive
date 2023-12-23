@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    background: #e1e2e4;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body_scr_n{
+    overflow:hidden;
+}
+/*
+Для фона, сервый - #e1e2e4;
+Белый - #fff;
+Сервый - rgb(70, 70, 70)
+Синий - #241fffж
+
+*/
+
+header{
+    background: #fff;
+
+    width: 100%;
+    min-height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 100%;
+    min-height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(70, 70, 70);
+
+    color: #fff;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+
+
+/* Форма для radio */
+.form_for_radio{
+    width: 100%;
+    height: 100px;
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Общие классы */
+.container{
+    width: 1200px;
+}
+.my_height{
+    min-height: 700px;
+}
+
+.my_margin{
+    margin: 15px 0 0 0;
+}
+.my_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my_unactive{
+    display: none;
+}
+.my_weight{
+    font-weight: bolder;
+}
+.my_overflow{
+    overflow-y: scroll;
+}
+
+
+
+/* Моя форма */
+.my_form{
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+.my_f_item{
+    width: 90%;
+    min-height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.my_f_item_sub{
+    width: 80%;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_f_item_pass{
+    width: 80%;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.my_f_item_for_select{
+    width: 90%;
+    min-height: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my_f_item_for_select select{
+    width: 81%;
+    height: 36px;
+
+    border-radius: 5px;
+    border: none;
+    
+    background: #e1e2e4;
+
+    font-size: 14px;
+
+    padding: 0 0 0 5px;
+}
+
+
+
+
+
+.my_f_item input{
+    width: 80%;
+    height: 35px;
+
+    border-radius: 5px;
+    border: none;
+
+    background: #e1e2e4;
+
+    font-size: 14px;
+
+    padding: 0 0 0 5px;
+}
+.my_f_item_pass input{
+    width: 90%;
+    height: 35px;
+}
+
+.my_f_item select{
+    width: 81%;
+    height: 36px;
+
+    border-radius: 5px;
+    border: none;
+    
+    background: #e1e2e4;
+
+    font-size: 14px;
+
+    padding: 0 0 0 5px;
+}
+.my_f_item input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 5px;
+    border: none;
+
+    background: #e1e2e4;
+
+    font-size: 14px;
+}
+.my_f_item textarea{
+    width: 80%;
+    height: 90px;
+
+    border-radius: 5px;
+    border: none;
+
+    background: #e1e2e4;
+
+    font-size: 14px;
+
+    resize: none;
+
+    padding: 0 0 0 5px;
+}
+
+.my_f_item form{
+    width: 80%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_f_item h2{
+    text-align: center;
+}
+.my_f_item .my_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sub2{
+    width: 80%;
+    height: 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub2 input{
+    width: 30%;
+    height: 35px;
+}
+.sub2 input::placeholder{
+    text-align: center;
+}
+
+
+.check_spec_pass{
+    width: 20px;
+    height: 20px;
+
+    margin: 0 0 0 10px;
+}
+
+
+
+
+/* Скрыть блок формы */
+.my_display_none{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* картинки */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Кнопки */
+.my_button{
+    width: 110px;
+    height: 43px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background: #241fff;
+    color: #fff;
+
+    border-radius: 5px;
+    border: none;
+
+    margin: 0 0 15px 0;
+}
+.my_button:hover{
+    background: #4845fa;
+    cursor: pointer;
+}
+
+
+.special_btn{
+    position: fixed;
+    top: 95px;
+    right: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.special_btn:hover{
+    cursor: pointer;
+    color: #241fff;
+}
+.spc_btn_act{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.btn_for_act_start{
+    width: 120px;
+    height: 22px;
+
+    background: none;
+    border: none;
+}
+.btn_for_act_start:hover{
+    cursor: pointer;
+    color: #241fff;
+}
+
+
+
+.special_btn1{
+    position: fixed;
+    top: 95px;
+    left: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.special_btn1:hover{
+    cursor: pointer;
+    color: #241fff;
+}
+
+
+
+.btn_for_user_acc_info{
+    background: none;
+    color: #000;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn_for_user_acc_info:hover{
+    cursor: pointer;
+    color: #241fff;
+}
+
+
+
+/* Модальное окно */
+.my_modal{
+    position: fixed;
+    top:0;
+    left: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.my_modal_close{
+    width: 550px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.my_modal_unactive{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Кнопка в модальном окне */
+.my_modal .btn_f_tr{
+    color: #fff;
+    background: rgb(70, 70, 70);
+}
+.my_modal .btn_f_tr:hover{
+    color: #e1e2e4;
+    background: rgba(70, 70, 70, 0.7);
+}
+
+.my_modal_body{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Отображение истории аренд в модальном окне */
+.my_modal .trnsp_list{
+    width: 100%;
+    min-height: 700px;
+
+    background: #fff;
+}
+
+
+
+
+
+
+/* Меню */
+.menu{
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_logo{
+
+}
+
+.menu_chapter{
+    width: 350px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.chapter_item{
+
+}
+.chapter_item:hover{
+    cursor: pointer;
+    color: #241fff;
+
+}
+
+.menu_acc{
+
+}
+.menu_acc:hover{
+    cursor: pointer;
+}
+
+
+/* Подменю, для раздела */
+.sub_menu{
+    width: 100%;
+    height: 72px;
+
+    color: rgb(70,70,70);
+}
+.sub_menu_for_chapter{
+    width: 350px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub_menu_for_chapter_item{
+
+}
+.sub_menu_for_chapter_item:hover{
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+
+
+/* Главный блок, в который будут помещаться блоки */
+.main_block{
+    width: 100%;
+    min-height: 1000px;
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Блок с отображением информации о аккаунте */
+.acc_info{
+    width: 600px;
+    min-height: 150px;
+
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+.acc_info_item{
+    margin: 5px 0 0 0;
+
+    width: 95%;
+    min-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    word-wrap: break-word;
+
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+
+
+
+/* Отображение транспорта */
+.trnsp_list{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.trnsp_list_item{
+    margin: 15px 0 0 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trnsp_list_info{
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.trnsp_head{
+    width: 95%;
+    color: #000;
+}
+.trnsp_head:hover{
+    cursor: pointer;
+}
+.trnsp_head_img{
+    width: 100%;
+    min-height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trnsp_head_img img{
+    width: 150px;
+    height: 150px;
+}
+.trnsp_head_mdl{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 24px;
+    font-weight: bolder;
+}
+.for_my_rent_head{
+    font-size: 18px;
+}
+
+
+.trnsp_head_foot{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    font-size: 18px;
+}
+/* Для ТС доступного для аренды */
+.for_rent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trnsp_info{
+    width: 95%;
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: height 0.4s, opacity 0.3s, visibility 0s linear 0.3s;
+
+    color: #000; 
+}
+.my_active{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+
+    display: block;
+}
+.my_scale{
+    transform: scale(1.08);
+}
+
+
+.trnsp_info_item{
+    margin: 5px 0 0 0;
+    padding: 5px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trnsp_foother{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_f_tr{
+    width: 95px;
+    height: 30px;
+
+    background: none;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+
+    border-radius: 5px;
+}
+.btn_f_tr:hover{
+    cursor: pointer;
+    color: #e1e2e4;
+    background: rgb(70, 70, 70);
+}
+
+/* Открытая карточка */
+.activ_block_trnsp{
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.8);
+
+    border: 1px solid black;
+}
+
+
+
+
+/* Админка */
+/* Область для вывода аккаунтов пользователей; */
+.get_user_acc_select{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.user_acc_item{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user_acc_info{
+    width: 95%;
+
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.acc_head{
+    width: 95%;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.acc_head:hover{
+    cursor: pointer;
+}
+.acc_head_id{
+    width: 95%;
+    height: 20px;
+}
+.acc_head_img{
+    width: 95%;
+    height: 150px;
+
+    background: #e1e2e4;
+}
+.acc_head_name{
+    width: 95%;
+    height: 20px;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.acc_body{
+    width: 95%;
+    height: 100px;
+
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.acc_body_activ{
+    width: 95%;
+    height: 100px;
+
+    opacity: 1;
+    visibility:visible;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.acc_body_item{
+    margin: 5px 0 0 0;
+}
+
+.acc_body_btns{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 50px;
+
+    font-size: 11px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+
